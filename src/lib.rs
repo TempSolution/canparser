@@ -2,7 +2,9 @@ use std::{collections::HashMap, fs::File, io::Read};
 
 use can_dbc::Message;
 
-mod pyaload;
+mod payload;
+
+
 
 pub fn read_dbc(f: &mut File) -> HashMap<u32, Message> {
     let mut buffer = Vec::<u8>::new();
