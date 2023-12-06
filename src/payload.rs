@@ -132,6 +132,14 @@ impl CanData {
         return CanData { data: data };
     }
 
+    pub fn len(&self) -> usize {
+        return self.data.len();
+    }
+
+    pub fn push(&mut self, value: u8) {
+        self.data.push(value)
+    }
+
     pub fn decode(&self, s: &Signal) -> f64 {
         if s.signal_size == 1 {
             return 1.0;
