@@ -2,6 +2,8 @@
 name = "canparser"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Parsing of CAN data based on a DBC file."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
