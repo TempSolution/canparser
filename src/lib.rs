@@ -2,7 +2,7 @@ use std::{collections::HashMap, fs::File, io::Read};
 
 use can_dbc::Message;
 
-mod payload;
+pub mod payload;
 
 
 

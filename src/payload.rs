@@ -125,7 +125,7 @@ impl Payload {
 }
 
 impl CanData {
-    fn decode(&self, s: &Signal) -> f64 {
+    pub fn decode(&self, s: &Signal) -> f64 {
         if s.signal_size == 1 {
             return 1.0;
         }
