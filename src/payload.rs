@@ -11,6 +11,9 @@ pub struct CanData {
 }
 
 impl Payload {
+    pub fn new(data: Vec<u8>) -> Self {
+        return Payload { data: data }
+    }
     pub fn decode_payload(&self, s: &Signal) -> f64 {
         if s.signal_size == 1 {
             return 1.0;
@@ -125,6 +128,10 @@ impl Payload {
 }
 
 impl CanData {
+    pub fn new(data: Vec<u8>) -> Self {
+        return CanData { data: data };
+    }
+
     pub fn decode(&self, s: &Signal) -> f64 {
         if s.signal_size == 1 {
             return 1.0;
